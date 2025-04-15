@@ -21,7 +21,7 @@
 ### 1. Run...
 
 ```bash
-git clone https://example.com/bitbin.git
+git clone https://github.com/Molham-arch/Laravel-React.git
 cd bitbin
 composer install
 cp .env.example .env
