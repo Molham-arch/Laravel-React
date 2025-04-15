@@ -1,0 +1,59 @@
+$primary: #458588;
+$success: #8ec07c;
+$warning: #d79921;
+$danger: #cc241d;
+$light: #44403d;
+$dark: #3c3836;
+$gray: #585858;
+
+$accordion-color: white;
+$accordion-bg: $dark;
+$accordion-button-color: white;
+$accordion-button-bg: $dark;
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: white;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-color: rgb(153, 153, 153);
+$accordion-icon-color: white;
+$accordion-icon-active-color: white;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-color: $light;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    border-bottom: rgb(88, 88, 88) solid 1px;
+}
+
+.accordion-button:hover {
+    background-color: $primary;
+    color: white;
+}
+
+.btn-login, .btn-register {
+    max-height: 35px;
+}
+
+.costum-select{
+    background-color: $light;
+    color: white;
+}
+
+.costum-select:hover {
+    background-color: $dark;
+}
+
+.profile-link {
+    color: $primary;
+}
+
+.profile-link:hover {
+    color: rgb(163, 163, 163);
+}
