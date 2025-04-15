@@ -18,7 +18,7 @@
 
 ## ⚙️ Installatie-instructies
 
-### 1. Clone deze repository
+### 1. Run...
 
 ```bash
 git clone https://example.com/bitbin.git
