@@ -22,7 +22,7 @@
 
 ```bash
 git clone https://github.com/Molham-arch/Laravel-React.git
-cd bitbin
+cd Laravel-React
 composer install
 cp .env.example .env
 php artisan key:generate
