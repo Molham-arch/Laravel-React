@@ -23,7 +23,7 @@ export default function Show() {
           autoClose: 3000,
           theme: 'dark',
         });
-      });
+      }).catch(() => toast.error('Could not copy automatically. Select and copy the code below.'));
     }
   };
 
@@ -40,14 +40,14 @@ export default function Show() {
   };
 
   const handleDownload = () => {
-    const extension = snippet.CodingLanguage.toLowerCase();
+    const extension = ({ javascript: 'js', python: 'py', html: 'html', css: 'css', 'c#': 'cs', 'c++': 'cpp', php: 'php', c: 'c' })[snippet.CodingLanguage.toLowerCase()] || 'txt';
     const blob = new Blob([snippet.content], {
       type: 'text/plain;charset=utf-8',
     });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${snippet.title}.${extension}`;
+    a.download = `${snippet.title.replace(/[<>:"/\\|?*]/g, '_')}.${extension}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -120,7 +120,7 @@ export default function Show() {
                   {/* Highlighted Code */}
                   <div ref={codeRef}>
                     <SyntaxHighlighter
-                      language={snippet.CodingLanguage.toLowerCase()}
+                      language={({ 'c#': 'csharp', 'c++': 'cpp' })[snippet.CodingLanguage.toLowerCase()] || snippet.CodingLanguage.toLowerCase()}
                       style={gruvboxDark}
                     >
                       {snippet.content}

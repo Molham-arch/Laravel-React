@@ -41,6 +41,7 @@ export default function Welcome() {
                                 <Form.Control
                                     className='bg-light shadow'
                                     as="textarea"
+                                    aria-label="Code"
                                     style={{ height: '40vh', color: "white" }}
                                     value={data.content}
                                     onChange={(e) => setData('content', e.target.value)}
@@ -54,6 +55,7 @@ export default function Welcome() {
                                 <Form.Label>Title</Form.Label>
                                 <Form.Control
                                     type="text"
+                                    aria-label="Title"
                                     className='bg-light text-white mb-2 shadow'
                                     value={data.title}
                                     onChange={(e) => setData('title', e.target.value)}
@@ -62,6 +64,7 @@ export default function Welcome() {
 
                                 <Form.Label className='mt-2'>Syntax highlight</Form.Label>
                                 <Form.Select
+                                    aria-label="Syntax highlight"
                                     className='mb-2 shadow costum-select'
                                     value={data.CodingLanguage}
                                     onChange={(e) => setData('CodingLanguage', e.target.value)}
@@ -112,6 +115,7 @@ export default function Welcome() {
                                 <Form.Control
                                     className='bg-light shadow'
                                     as="textarea"
+                                    aria-label="Description"
                                     style={{ height: "211px", color: "white" }}
                                     value={data.description}
                                     onChange={(e) => setData('description', e.target.value)}

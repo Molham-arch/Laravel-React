@@ -4,6 +4,14 @@
 
 ---
 
+## Live portfolio demo
+
+The Vercel deployment is an interactive, browser-only demo. It reuses the original React pages and saves snippets in localStorage. Create, edit, syntax highlighting, copy, download, and delete work without a server. Public/Unlisted/Private are interface previews only: there are no accounts, shared links, or hosted Laravel database. The demo displays this limitation on every page.
+
+Run `npm ci`, then `npm run dev:demo`. Build with `npm run build:demo`; Vercel uses `vercel.json` and publishes `dist-demo`. Run `node demo/store.test.mjs` to verify storage behavior. The original `npm run dev` and `npm run build` commands remain for the Laravel application below.
+
+---
+
 ## 🚀 Functies
 
 - ✅ Code snippet aanmaken, bewerken, verwijderen

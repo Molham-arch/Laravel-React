@@ -1,0 +1,8 @@
+.demo-notice { background: #e8dcb6; color: #2e2925; padding: 12px 0; font-size: .9rem; }
+.form-control:focus { border-color: #83a598; box-shadow: 0 0 0 .2rem #83a59844; }
+.form-control { color: white; }
+.form-control::placeholder { color: #c3bbb1; }
+.text-muted { color: #c3bbb1 !important; }
+pre { max-width: 100%; }
+main { min-width: 0; }
+@media(max-width: 575px) { .demo-notice { font-size: .8rem; } .card-body { padding: .9rem; } }
